@@ -1,0 +1,16 @@
+name: snapcrafting-tutorial-nodejs
+version: 0.1.0
+summary: Cross-Platform Benchmark
+description: |
+  The Hello World snap package for Node.js tutorial, built with love
+  by Andrei Jiroh. Geekbench included!
+confinement: devmode
+base: core18
+parts:
+  snapcrafting-tutorial-nodejs:
+    plugin: dump
+    source: http://cdn.geekbench.com/Geekbench-$SNAPCRAFT_PROJECT_VERSION-Linux.tar.gz
+
+apps:
+  snapcrafting-tutorial-nodejs:
+    command: geekbench4
